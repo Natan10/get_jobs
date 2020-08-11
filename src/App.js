@@ -1,9 +1,12 @@
 import React from 'react';
+import {Container} from 'react-bootstrap';
 
+import NavbarComponent from './components/Navbar';
 
 function App() {
-  return (
-    <h1>PRonto</h1>
+  return (  
+    
+      <NavbarComponent/>
   );
 }
 
