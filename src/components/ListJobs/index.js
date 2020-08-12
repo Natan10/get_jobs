@@ -6,7 +6,7 @@ import './style.css';
 export default function ListJobs() {
   return (
     <Container fluid="lg">
-      <label>Teste</label>
+      <h1 className="list-jobs_label">Showing 1 - 50 of 237 jobs</h1>
       <ul className="list-unstyled">
         <Media as="li" className="list-jobs-item">
           <img
