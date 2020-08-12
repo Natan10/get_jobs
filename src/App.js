@@ -1,12 +1,14 @@
 import React from 'react';
-import {Container} from 'react-bootstrap';
 
 import NavbarComponent from './components/Navbar';
+import Filters from './components/Filters';
 
 function App() {
   return (  
-    
+    <>
       <NavbarComponent/>
+      <Filters/>
+    </>
   );
 }
 
