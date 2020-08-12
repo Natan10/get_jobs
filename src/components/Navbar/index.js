@@ -7,7 +7,7 @@ import './style.css';
 
 export default function NavbarComponent() {
   return (
-    <Navbar expand="lg" bg="primary">
+    <Navbar expand="lg" bg="primary" >
       <Container fluid="lg">
           <Col className="navbar_column">
             <Navbar.Brand href="#home">Give JObs</Navbar.Brand>

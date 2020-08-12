@@ -1,0 +1,30 @@
+.footer_container{
+  padding: 20px;
+}
+
+
+.footer_links ul{
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+}
+
+.footer_links ul li{
+  font-family: 'Archivo',sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.footer_icon svg{
+  color: rgb(0,0,0,0.3);
+}
+
+.footer_inc span{
+  font-family: 'Archivo',sans-serif;
+  font-size: 16px;
+  color: rgb(0,0,0,0.5);
+}
+
+
+
