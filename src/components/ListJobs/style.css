@@ -14,69 +14,12 @@
   margin-bottom: 20px;
 }
 
-.list-jobs-item{
-  border-bottom: 1px solid rgb(0,0,0,0.1);
-  margin-bottom: 20px;
-}
 
-.list-jobs_title,.list-jobs_type{
-  display: flex;
-  flex-direction: column;
-}
-
-.list-jobs_title h5{
-  font-family: 'Archivo',sans-serif;
-  font-size: 21px;
-  font-weight: bold;
-  color:#017AFD;
-}
-
-.list-jobs_title p{
-  font-family: 'Archivo',sans-serif;
-  font-size: 17px;
-}
-.list-jobs_title p span{
-  color: green;
-  font-weight: bold;
-}
-
-.list-jobs_type{
-  align-items: flex-end;
-}
-
-.list-jobs_type span{
-  font-family: 'Archivo',sans-serif;
-  font-size: 17px;
-}
-
-.list-jobs_type span + span{
-  color: rgb(0,0,0,0.5);
-}
 
 
 @media(max-width: 650px){
   .media-body{
     display: flex;
-  }
-
-  .list-jobs_title h5{
-    font-size: 19px;
-    font-weight: bold;
-    color:#017AFD;
-  }
-
-  .list-jobs_title p{
-    font-family: 'Archivo',sans-serif;
-    font-size: 15px;
-    margin: 0;
-  }
-
-  .list-jobs_type{
-    align-items: flex-start;
-  }
-
-  .list-jobs_type span{
-    font-size: 15px;
   }
 
 }

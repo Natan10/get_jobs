@@ -11,12 +11,15 @@ function App() {
   return (  
     <>
       <NavbarComponent/>
-      {/*<Filters/>
+      
+      
+      <div className="container_main" style={{height:'100vh',}}>
+     { /*<Filters/>
       <ListJobs/>*/}
-      <div className="container_main">
-        <DescriptionJob />
-      </div>
+      <DescriptionJob/>
       <Footer />
+      </div>
+      
     </>
   );
 }

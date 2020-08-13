@@ -1,21 +1,40 @@
 import React from 'react';
-import {Modal} from 'react-bootstrap';
+import {Modal,ListGroup} from 'react-bootstrap';
+import JobItem from '../JobItem';
 
-export default function ModalJob({state}) {
+import './style.css';
+
+
+export default function ModalJob({state,onHide}) {
+
+  const handleCose = () => {
+    onHide(false)
+  }
+
+
 
   return (
     <Modal
-        size="lg"
+        size="xl"
         show={state}
-        onHide={!state}
+        onHide={handleCose}
         aria-labelledby="example-modal-sizes-title-lg"
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton className="job-item_header">
           <Modal.Title id="example-modal-sizes-title-lg">
-            Large Modal
+            Showing 5 JObs at Company-name
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>...</Modal.Body>
+        <Modal.Body>
+        <ListGroup>
+          <ListGroup.Item>
+            <JobItem />
+            <JobItem />
+            <JobItem />
+            <JobItem />
+          </ListGroup.Item>
+        </ListGroup>
+        </Modal.Body>
       </Modal>
   )
 }

@@ -1,11 +1,16 @@
-import React from 'react'
-import {Container,Row,Col,Card,Button} from 'react-bootstrap';
+import React,{useState} from 'react'
+import {Container,Row,Col,Card} from 'react-bootstrap';
 import { FaArrowLeft } from 'react-icons/fa';
+import ModalJob from '../ModalJob';
 
 import './style.css';
 
 
 export default function DescriptionJob() {
+
+  const [showModal,setShowModal] = useState(false);
+
+
   return (
     <Container fluid="lg" className="description-job_container">
       <label className="description-job_label"> <FaArrowLeft/> Sell all positions</label>
@@ -26,7 +31,7 @@ export default function DescriptionJob() {
               <Card.Title>
                 <div className="decription-job_cardtitle">
                   <span>Title</span>
-                  <label>other jobs 1</label>
+                  <button onClick={()=> setShowModal(!showModal)}>other jobs 1</button>
                 </div>
               </Card.Title>
               <Card.Text>
@@ -39,6 +44,8 @@ export default function DescriptionJob() {
           </Card>
         </Col>
       </Row>
+
+      <ModalJob state={showModal} onHide={setShowModal}/>
     </Container>
   )
 }

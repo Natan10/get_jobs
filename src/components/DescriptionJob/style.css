@@ -28,6 +28,7 @@
 .description-job_pageheader label{
   margin:0 0 10px 0 !important;
   font-size: 30px !important;
+  
 }
 
 
@@ -42,7 +43,7 @@
   margin: 0;
 }
 
-.decription-job_cardtitle label{
+.decription-job_cardtitle button{
   font-size: 12px;
   font-weight: bold;
   color: blue;
@@ -53,7 +54,7 @@
   background-color: #F7F7F7;
 }
 
-.decription-job_cardtitle label:hover{
+.decription-job_cardtitle button:hover{
   background-color: #FFF;
 }
 
