@@ -13,7 +13,7 @@ export default function Routes() {
       <NavbarComponent/>
         <Switch>
           <Route exact path="/" component={ListJobs} />
-          <Route path="/job" component={DescriptionJob} />
+          <Route path="/job/:id" component={DescriptionJob} />
         </Switch>
       <Footer/>
     </BrowserRouter>
