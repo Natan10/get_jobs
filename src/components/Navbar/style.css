@@ -8,17 +8,18 @@
   padding: 16px 0;
 }
 
-.navbar_column a.navbar-brand {
+.navbar_column .navbar-brand a{
   color: #FFF !important;
+  text-decoration: none;
 }
 
 .navbar-nav{
   display: flex;
   flex-direction: row;
-
+  align-items: center;
 }
 
-.navbar-nav a.nav-link{
+.navbar-nav .nav-item a{
   text-decoration: none !important;
   font-family: 'Archivo',sans-serif;
   font-size: 18px;

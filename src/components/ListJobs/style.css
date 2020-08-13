@@ -1,3 +1,6 @@
+.list-jobs_container{
+  height: 100vh;
+}
 
 .media-body{
   display: flex;
