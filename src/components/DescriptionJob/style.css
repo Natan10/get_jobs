@@ -14,6 +14,23 @@
   color:blue;
 }
 
+.description-job_pageheader{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(0,0,0,0.1);
+}
+
+.description-job_pageheader span{
+  color: rgb(0,0,0,0.3);
+}
+
+.description-job_pageheader label{
+  margin:0 0 10px 0 !important;
+  font-size: 30px !important;
+}
+
+
 .decription-job_cardtitle{
   display: flex;
   justify-content: space-between;
