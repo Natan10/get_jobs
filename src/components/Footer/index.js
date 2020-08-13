@@ -8,7 +8,7 @@ import './style.css';
 export default function Footer() {
   return (
 
-    <Navbar expand="lg" bg="light" fixed="bottom" className="footer">
+    <Navbar expand="lg" bg="light" className="footer">
       <Container fluid="lg" className="footer_container">
         <div className="footer_links">
             <ul>

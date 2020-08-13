@@ -4,15 +4,20 @@ import NavbarComponent from './components/Navbar';
 import Filters from './components/Filters';
 import ListJobs from './components/ListJobs';
 import Footer from './components/Footer';
+import DescriptionJob from './components/DescriptionJob';
+
 
 function App() {
   return (  
-    <div className="main">
+    <>
       <NavbarComponent/>
-      <Filters/>
-      <ListJobs/>
+      {/*<Filters/>
+      <ListJobs/>*/}
+      <div className="container_main">
+        <DescriptionJob />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

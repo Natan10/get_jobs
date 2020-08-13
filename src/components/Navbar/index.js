@@ -10,7 +10,7 @@ export default function NavbarComponent() {
     <Navbar expand="lg" bg="primary" className="navbar_component">
       <Container fluid="lg">
           <Col className="navbar_column">
-            <Navbar.Brand href="#home">Give JObs</Navbar.Brand>
+            <Navbar.Brand href="#home">GetJobs</Navbar.Brand>
             <Nav>
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
