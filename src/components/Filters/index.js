@@ -16,7 +16,7 @@ export default function Filters() {
         <Col lg={4} md={4} className="filter_first_input">
           <FormControl id="basic-url" aria-describedby="basic-addon3" placeholder="Location" />
         </Col>
-        <Col lg={7} md={7}>
+        <Col lg={6} md={6}>
           <InputGroup className="mb-3">
             <FormControl placeholder="Job Description"/>
             <InputGroup.Append>
