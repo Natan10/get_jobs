@@ -1,6 +1,24 @@
-.list-jobs_container{
+.list-jobs_container--activate{
+  height: 100%;
+}
+
+.list-jobs_container--disabled{
   height: auto;
 }
+
+
+.list-jobs_container--disabled .list-jobs_button{
+  width: 100%;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+
+.list-jobs_container--disabled .list-jobs_button:hover{
+  background: green;
+  opacity: 0.6;
+}
+
+
 
 .media-body{
   display: flex;

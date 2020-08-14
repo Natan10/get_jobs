@@ -1,6 +1,5 @@
 import React from 'react';
 import {Container,Col,Navbar,Nav} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
  
 import './style.css';
 
@@ -10,12 +9,12 @@ export default function NavbarComponent() {
       <Container fluid="lg">
         <Col className="navbar_column">
           <Navbar.Brand>
-            <Link to="/">
+            <a href="/">
               GetJobs
-            </Link>
+            </a>
           </Navbar.Brand>
           <Nav>
-            <Nav.Item><Link to="/">All Jobs</Link></Nav.Item>
+            <Nav.Item><a href="/">All Jobs</a></Nav.Item>
           </Nav>
         </Col>
       </Container>

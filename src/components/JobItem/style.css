@@ -3,6 +3,10 @@
   margin-bottom: 20px;
 }
 
+.job-item img{
+  margin-bottom: 5px;
+}
+
 .job-item_title,.job-item_type{
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
 
 .job-item_title h5{
   font-family: 'Archivo',sans-serif;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
   color:#017AFD;
 }
