@@ -1,7 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Container} from 'react-bootstrap';
 import Filters from '../Filters';
 import JobItem from '../JobItem';
+
+import api from '../../services/api';
+
 
 import './style.css';
 
