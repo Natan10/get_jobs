@@ -1,4 +1,4 @@
-import React,{memo} from 'react';
+import React from 'react';
 import {Media} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -20,7 +20,7 @@ function JobItem(props) {
     company_logo,
   } = props.job;
 
-
+  console.log(props)
   return (
     <Media as="li" className="job-item">
       <img

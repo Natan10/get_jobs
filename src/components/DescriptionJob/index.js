@@ -2,8 +2,9 @@ import React,{useState} from 'react'
 import {Container,Row,Col,Card,Modal,ListGroup} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import { FaArrowLeft } from 'react-icons/fa';
-import ModalJob from '../ModalJob';
 import ReactHtmlParser from 'react-html-parser';
+
+import JobItem from '../JobItem';
 
 import './style.css';
 import image from '../../assets/images/no-image.jpeg';
@@ -18,17 +19,17 @@ export default function DescriptionJob(props) {
   }
 
   const {
-    id,
     title,
     location,
     description,
     company,
     type,
     company_logo,
-    company_url,
-    how_to_apply
+    company_url
   } = props.jobs;
 
+  const job_items = props.jobQtd;
+  
 
   return (
 
@@ -55,7 +56,7 @@ export default function DescriptionJob(props) {
               <Card.Title>
                 <div className="decription-job_cardtitle">
                   <span>{company}</span>
-                  <button onClick={()=> setShowModal(true)}>other jobs 1</button>
+                  <button onClick={()=> setShowModal(true)}>{`other jobs ${job_items.length}`}</button>
                 </div>
               </Card.Title>
               <Card.Text>
@@ -81,12 +82,12 @@ export default function DescriptionJob(props) {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <ListGroup>
-          <ListGroup.Item>
-            <h1>shshj</h1>
-            <h1>shshj</h1>
-            <h1>shshj</h1>
-          </ListGroup.Item>
+        <ListGroup variant="flush">
+          {job_items.length > 0 && job_items.map(item => {
+           return<ListGroup.Item>
+                  <JobItem job={item}/>
+                </ListGroup.Item>
+          })}
         </ListGroup>
         </Modal.Body>
      </Modal>
