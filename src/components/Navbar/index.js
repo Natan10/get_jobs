@@ -2,6 +2,8 @@ import React from 'react';
 import {Container,Col,Navbar,Nav} from 'react-bootstrap';
  
 import './style.css';
+import logo from '../../assets/images/logo.png';
+
 
 export default function NavbarComponent() {
   return (
@@ -9,9 +11,10 @@ export default function NavbarComponent() {
       <Container fluid="lg">
         <Col className="navbar_column">
           <Navbar.Brand>
-            <a href="/">
-              GetJobs
-            </a>
+            <img
+              src={logo}
+              alt="logo app"
+            />
           </Navbar.Brand>
           <Nav>
             <Nav.Item><a href="/">All Jobs</a></Nav.Item>

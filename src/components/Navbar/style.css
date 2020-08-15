@@ -1,5 +1,5 @@
 .navbar_component{
-  background-color: #0D2F81 !important;
+  background-color: #024AAD !important;
 }
 
 .navbar_column{
@@ -8,9 +8,8 @@
   padding: 16px 0;
 }
 
-.navbar_column .navbar-brand a{
-  color: #FFF !important;
-  text-decoration: none;
+.navbar_column .navbar-brand img{
+  width: 60px;
 }
 
 .navbar-nav{
