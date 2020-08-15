@@ -4,8 +4,7 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom';
 import NavbarComponent from '../components/Navbar';
 import Footer from '../components/Footer';
 import ListJobs from '../components/ListJobs';
-import DescriptionJob from '../components/DescriptionJob';
-
+import SingleJob from '../components/SingleJob';
 
 export default function Routes() {
   return (
@@ -13,7 +12,7 @@ export default function Routes() {
       <NavbarComponent/>
         <Switch>
           <Route exact path="/" component={ListJobs} />
-          <Route path="/job/:id" component={DescriptionJob} />
+          <Route path="/job/:id" component={SingleJob} />
         </Switch>
       <Footer/>
     </BrowserRouter>

@@ -4,8 +4,6 @@ import { JobsReducer, INITIAL_STATE } from '../reducers/jobsReducer';
 export const JobsContext = createContext();
 
 
-
-
 export default function JobContextProvider({children}){
   const [state,dispatch] = useReducer(JobsReducer,INITIAL_STATE);
 

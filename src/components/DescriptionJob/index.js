@@ -7,10 +7,11 @@ import ModalJob from '../ModalJob';
 import './style.css';
 
 
-export default function DescriptionJob() {
+export default function DescriptionJob(props) {
 
   const [showModal,setShowModal] = useState(false);
 
+  console.log(props)
 
   return (
     <Container fluid="lg" className="description-job_container">

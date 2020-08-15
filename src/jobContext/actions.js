@@ -4,3 +4,10 @@ export const AddJobs = (jobs) => {
     payload: jobs,
   }
 }
+
+export const AddFilterJobs = (jobs) => {
+  return {
+    type: 'ADD_FILTER_JOB',
+    payload: jobs,
+  }
+}

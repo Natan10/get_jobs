@@ -47,14 +47,14 @@ function JobItem(props) {
 }
 
 
-JobItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  company: PropTypes.string.isRequired,
-  created_at: PropTypes.string,
-  type: PropTypes.string,
-  company_logo: PropTypes.string,
-}
+//JobItem.propTypes = {
+//  id: PropTypes.string.isRequired,
+//  title: PropTypes.string.isRequired,
+//  location: PropTypes.string.isRequired,
+//  company: PropTypes.string.isRequired,
+//  created_at: PropTypes.string,
+//  type: PropTypes.string,
+//  company_logo: PropTypes.string,
+//}
 
-export default memo(JobItem);
+export default JobItem;
