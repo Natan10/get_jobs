@@ -72,6 +72,10 @@
   width: 20rem;
 }
 
+.card .card-img-top{
+  height: 210px;
+}
+
 
 @media(max-width: 980px){
   .description-job_container .row ul{

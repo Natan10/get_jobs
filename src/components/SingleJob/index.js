@@ -16,7 +16,6 @@ export default function SingleJob() {
   useEffect(() => { 
       const job = jobs.find(item => item.id === id);
       setJob(job);
-      console.log(job)
   },[id, jobs]);
   
 

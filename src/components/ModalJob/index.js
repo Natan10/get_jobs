@@ -8,7 +8,7 @@ import './style.css';
 export default function ModalJob({state,onHide}) {
 
   const handleCose = () => {
-    onHide(false)
+    onHide(false);
   }
 
 
