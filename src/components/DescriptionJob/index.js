@@ -61,7 +61,12 @@ export default function DescriptionJob(props) {
               </Card.Title>
               <Card.Text>
                 <div className="description-job_cardbody">
-                  <span>Link: <a href={company_url}>{`${ReactHtmlParser(company_url) || 'sem link'}`}</a></span>
+                  {(company_url !== 'null' | company_url !== "http:") ? 
+                  (<span>  
+                    Link: <a href={company_url}>{`${ReactHtmlParser(company_url)}`}</a>
+                  </span>):
+                  (<span>Sem link</span>)
+                  }
                 </div>
               </Card.Text>
             </Card.Body>
@@ -78,7 +83,7 @@ export default function DescriptionJob(props) {
       >
         <Modal.Header closeButton className="job-item_header">
           <Modal.Title id="example-modal-sizes-title-lg">
-            Showing 5 JObs at Company-name
+            Showing {job_items.length} JObs at {company}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

@@ -16,11 +16,13 @@ export default function SingleJob() {
 
   useEffect(() => { 
       const job_item = jobs.find(item => item.id === id);
-      const job_qtd_item = filterJobs.filter(item => item.company === job.company);
+      const job_qtd_item = filterJobs.filter(item => item.company === job.company && item.id !== job.id);
 
-      if(job_qtd_item.length > 0) setJobQtd(job_qtd_item);
+      if(job_qtd_item.length > 0) {
+        setJobQtd(job_qtd_item)
+      }
       setJob(job_item);
-  },[id, jobs, filterJobs, job.company]);
+  },[filterJobs, id, job.company, job.id, jobs]);
   
 
   return (<DescriptionJob jobs={job} jobQtd={job_qtd} />)

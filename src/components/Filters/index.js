@@ -48,7 +48,7 @@ export default function Filters({handleQuery}) {
             </InputGroup.Append>
           </InputGroup>
         </Col>
-        <Col lg={1} md={2}>
+        <Col lg={2} md={2}>
           <Button 
             variant="success" 
             className="filter_button"
