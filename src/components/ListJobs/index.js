@@ -28,7 +28,6 @@ export default function ListJobs() {
         setShowContainer('disabled');
         dispatch(AddJobs(response.data));
         setLoad(!load);
-        console.log(response.data)
       }catch(err){
         toast.error("Request error, try again ...")
       }
