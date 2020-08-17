@@ -13,6 +13,7 @@
   width: 60px;
 }
 
+
 .navbar-nav{
   display: flex;
   flex-direction: row;
@@ -26,6 +27,10 @@
   font-weight: bold;
   color: #FFF !important;
   margin: 0 10px;
+}
+
+.navbar-nav .nav-item a:hover{
+  color: #ed8d4b !important;
 }
 
 

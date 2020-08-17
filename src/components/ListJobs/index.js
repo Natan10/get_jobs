@@ -1,7 +1,8 @@
-import React,{useContext,useEffect,useState} from 'react'
+import React,{useContext,useEffect,useState} from 'react';
 import {Container,Button} from 'react-bootstrap';
 import Filters from '../Filters';
 import JobItem from '../JobItem';
+import SpinnerPage from '../SpinnerPage';
 
 import {JobsContext} from '../../jobContext/JobsContext';
 import {AddJobs,AddFilterJobs} from '../../jobContext/actions';
@@ -15,6 +16,7 @@ export default function ListJobs() {
   const [state,dispatch] = useContext(JobsContext);
   const [setContainer,setShowContainer] = useState('');
   const [page,setPage] = useState(2);
+  const [load,setLoad] = useState(true);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(()=>{
@@ -24,6 +26,7 @@ export default function ListJobs() {
         setShowButton(true);
         setShowContainer('disabled');
         dispatch(AddJobs(response.data));
+        setLoad(!load);
       }catch(err){
         alert('Erro na requisição!');
       }
@@ -42,6 +45,7 @@ export default function ListJobs() {
       })
       
       response.data.length > 5 ? setShowContainer('disabled'):setShowContainer('activate');
+
       setShowButton(false);
       dispatch(AddJobs(response.data));
     }catch(err){
@@ -70,6 +74,10 @@ export default function ListJobs() {
 
   return (
       <Container fluid="lg" className={`list-jobs_container--${setContainer}`}>
+        {load === true ? (
+        <SpinnerPage />):
+        (
+        <>
         <Filters handleQuery={handleQuery}/>
           <h1 className="list-jobs_label">Showing {state.jobs.length} jobs</h1>
           <ul className="list-unstyled">
@@ -87,6 +95,8 @@ export default function ListJobs() {
             More Awesome Jobs
           </Button>
           )}
+        </>
+        )}
       </Container>
    
   )

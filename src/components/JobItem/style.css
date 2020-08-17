@@ -13,11 +13,21 @@
   flex-direction: column;
 }
 
+
+.job-item_title a{
+  text-decoration: none;
+}
+
 .job-item_title h5{
   font-family: 'Archivo',sans-serif;
   font-size: 19px;
   font-weight: bold;
   color:#017AFD;
+  text-decoration: none;
+}
+
+.job-item_title h5:hover{
+  color: #ed8d4b;
 }
 
 .job-item_title p{

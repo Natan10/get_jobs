@@ -7,6 +7,7 @@
 }
 
 
+
 .list-jobs_container--disabled .list-jobs_button{
   width: 100%;
   margin-bottom: 20px;
@@ -14,8 +15,7 @@
 }
 
 .list-jobs_container--disabled .list-jobs_button:hover{
-  background: green;
-  opacity: 0.6;
+  background: #ed8d4b;
 }
 
 
@@ -31,7 +31,7 @@
   font-family: 'Archivo',sans-serif;
   font-size: 25px;
   font-weight: bold;
-  color: #133581;
+  color: #e27831;
   margin-bottom: 20px;
 }
 
