@@ -3,6 +3,8 @@ import {Container,Button} from 'react-bootstrap';
 import Filters from '../Filters';
 import JobItem from '../JobItem';
 import SpinnerPage from '../SpinnerPage';
+import { ToastContainer,toast } from 'react-toastify';
+
 
 import {JobsContext} from '../../jobContext/JobsContext';
 import {AddJobs,AddFilterJobs} from '../../jobContext/actions';
@@ -18,7 +20,6 @@ export default function ListJobs() {
   const [page,setPage] = useState(2);
   const [load,setLoad] = useState(true);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(()=>{
     async function Fetch(){
       try{
@@ -28,7 +29,7 @@ export default function ListJobs() {
         dispatch(AddJobs(response.data));
         setLoad(!load);
       }catch(err){
-        alert('Erro na requisição!');
+        toast.error("Request error, try again ...")
       }
     }
     Fetch();
@@ -49,12 +50,13 @@ export default function ListJobs() {
       setShowButton(false);
       dispatch(AddJobs(response.data));
     }catch(err){
-      alert('Erro na requisição');
+      toast.error("Request error, try again ...");
     }
   }
 
   const handlePage = async () => {
     try{
+      
       const response = await api.get('/positions.json',{
         params:{
           page: page
@@ -64,11 +66,11 @@ export default function ListJobs() {
         setPage(page+1);
         dispatch(AddJobs(response.data));
         dispatch(AddFilterJobs(response.data));
-
+        
       }else { setShowButton(false) }
 
     }catch(err){
-      alert('Erro na requisição');
+      toast.error("Request error, try again ...");
     }
   }
 
@@ -97,7 +99,23 @@ export default function ListJobs() {
           )}
         </>
         )}
+
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          />
+          {/* Same as */}
+        <ToastContainer />
       </Container>
-   
+
+            
+
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container,Col,Navbar,Nav} from 'react-bootstrap';
-
+import {Link} from 'react-router-dom';
 
 import './style.css';
 import logo from '../../assets/images/logo.png';
@@ -12,10 +12,12 @@ export default function NavbarComponent() {
       <Container fluid="lg">
         <Col className="navbar_column">
           <Navbar.Brand>
-            <img
-              src={logo}
-              alt="logo app"
-            />
+            <Link to="/">
+              <img
+                src={logo}
+                alt="logo app"
+              />
+            </Link>
           </Navbar.Brand>
           <Nav>
             <Nav.Item><a href="/">All Jobs</a></Nav.Item>

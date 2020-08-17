@@ -16,7 +16,8 @@
     "react-html-parser": "^2.0.2",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.2"
+    "react-scripts": "3.4.2",
+    "react-toastify": "^6.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

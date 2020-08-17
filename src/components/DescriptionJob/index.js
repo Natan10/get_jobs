@@ -56,7 +56,8 @@ export default function DescriptionJob(props) {
               <Card.Title>
                 <div className="decription-job_cardtitle">
                   <span>{company}</span>
-                  <button onClick={()=> setShowModal(true)}>{`other jobs ${job_items.length}`}</button>
+                  {job_items.length > 0 && 
+                  <button onClick={()=> setShowModal(true)}>{`other jobs ${job_items.length}`}</button>}
                 </div>
               </Card.Title>
               <Card.Text>
