@@ -89,7 +89,7 @@ export default function DescriptionJob(props) {
         <Modal.Body>
         <ListGroup variant="flush">
           {job_items.length > 0 && job_items.map(item => {
-           return<ListGroup.Item>
+           return<ListGroup.Item onClick={()=> setShowModal(!showModal)}>
                   <JobItem job={item}/>
                 </ListGroup.Item>
           })}
@@ -97,5 +97,9 @@ export default function DescriptionJob(props) {
         </Modal.Body>
      </Modal>
     </Container>
+
+
+  
   )
 }
+
