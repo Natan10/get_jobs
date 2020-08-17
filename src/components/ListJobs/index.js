@@ -23,7 +23,7 @@ export default function ListJobs() {
   useEffect(()=>{
     async function Fetch(){
       try{
-        const response = await api.get('/positions.json');
+        const response = await api.get('positions.json');
         setShowButton(true);
         setShowContainer('disabled');
         dispatch(AddJobs(response.data));
