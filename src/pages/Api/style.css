@@ -1,0 +1,87 @@
+.container-api{
+  padding: 25px 0;
+}
+
+
+.api-header{
+  padding: 20px 0;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(0,0,0,0.2);
+}
+
+
+.api-bloco1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(0,0,0,0.2);
+}
+
+.api-bloco1 p {
+  line-height: 30px;
+  margin: 0;
+}
+
+.api-bloco1 h2{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.api-bloco1 h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.api-bloco1 ul{
+  margin-left:30px;
+}
+
+
+.api-bloco2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(0,0,0,0.2);
+}
+
+.api-bloco2 p {
+  line-height: 30px;
+  margin: 0;
+}
+
+.api-bloco2 h2{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.api-bloco2 h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.api-bloco2 ul{
+  margin-left:30px;
+}
+
+
+.api-bloco3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.api-bloco3 p {
+  line-height: 30px;
+  margin: 0;
+}
+
+.api-bloco3 h2{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.api-bloco3 h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.api-bloco3 ul{
+  margin-left:30px;
+}

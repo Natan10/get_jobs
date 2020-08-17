@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Col,Navbar,Nav} from 'react-bootstrap';
- 
+
+
 import './style.css';
 import logo from '../../assets/images/logo.png';
 
@@ -18,6 +19,8 @@ export default function NavbarComponent() {
           </Navbar.Brand>
           <Nav>
             <Nav.Item><a href="/">All Jobs</a></Nav.Item>
+            <Nav.Item><a href="/faq">How It Works</a></Nav.Item>
+            <Nav.Item><a href="/api">Api</a></Nav.Item>
           </Nav>
         </Col>
       </Container>
