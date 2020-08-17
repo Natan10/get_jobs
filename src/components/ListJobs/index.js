@@ -23,11 +23,12 @@ export default function ListJobs() {
   useEffect(()=>{
     async function Fetch(){
       try{
-        const response = await api.get('positions.json');
+        const response = await api.get('/positions.json');
         setShowButton(true);
         setShowContainer('disabled');
         dispatch(AddJobs(response.data));
         setLoad(!load);
+        console.log(response.data)
       }catch(err){
         toast.error("Request error, try again ...")
       }
